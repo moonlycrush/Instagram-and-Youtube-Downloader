@@ -32,7 +32,7 @@ async def main() -> None:
     logger.info("Starting bot...")
     Path(DOWNLOAD_DIR).mkdir(parents=True, exist_ok=True)
 
-    bot = Bot(token="8601595538:AAHtNfUNExUaADAUjBTt5oNf5n0gSHFwqZo", default=DefaultBotProperties(parse_mode="HTML"))
+    bot = Bot(token="", default=DefaultBotProperties(parse_mode="HTML"))
     storage = MemoryStorage()
     dp = Dispatcher(storage=storage)
 
